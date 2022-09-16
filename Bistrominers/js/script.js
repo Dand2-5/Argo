@@ -40,9 +40,9 @@ let text2 = document.getElementById("t2");
 let text3 = document.getElementById("t3");
 
 const load = () => {
-  animate(text1, 0, 98, 3000);
-  animate(text2, 0, 89, 3000);
-  animate(text3, 0, 99, 3000);
+  animate(text1, 0, 98, 2000);
+  animate(text2, 0, 89, 2000);
+  animate(text3, 0, 99, 2000);
 };
 let counter = document.getElementById("counter");
 let hasRun = true;
