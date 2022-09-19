@@ -7,6 +7,29 @@ $text: #00171f;
   letter-spacing: 1.2px;
   box-sizing: border-box;
 }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.loader.hidden {
+  animation: fadeout 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 body {
   color: $text;
   font-family: "raleway", montserrat, sans-serif;
@@ -35,7 +58,7 @@ nav {
 .navbar-brand img {
   height: 130px;
   position: absolute;
-  top: -17px;
+  top: -24px;
   background-color: #fff;
   padding: 17px;
   border-radius: 2px;
@@ -125,7 +148,47 @@ nav {
     }
   }
 }
-
+.bgg3 {
+  background-position: center !important;
+  background-size: contain !important ;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, #000000af, #000000af);
+  display: flex;
+  align-items: center;
+}
+.since75 {
+  width: 13vw;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .ss-cnt {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .ss-cnt {
+    width: 51.507%;
+  }
+}
+.outter75 {
+  justify-content: center;
+  margin-left: 100px;
+}
+.inner75 {
+  display: flex;
+  justify-content: center;
+}
+.invest75 {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+@media screen and (min-width: 800px) {
+  .swiper-slide {
+    background-position: top center;
+  }
+}
 .landing {
   margin-top: -20px;
   height: 100vh;
@@ -296,6 +359,7 @@ nav {
   color: #fff;
 }
 .sub {
+  text-align: center;
   color: $accent;
   font-size: 12px;
   font-weight: 500;
@@ -314,6 +378,7 @@ nav {
   font-size: 13px;
   font-weight: 400;
   line-height: 1.7;
+  text-align: center;
 }
 .pp-cards {
   margin-top: 40px;
@@ -682,6 +747,24 @@ td img {
 .quote {
   font-size: 11pt;
 }
+@media screen and (max-width: 550px) {
+  .outter75 {
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inner75 {
+    justify-content: flex-start;
+  }
+  .since75 {
+    margin-left: 20px;
+    width: 90px;
+  }
+  .bgg3 {
+    background-position: center !important ;
+    background-size: cover !important;
+  }
+}
 @media (min-width: 500px) {
   .quote {
     font-size: 16pt;
@@ -829,6 +912,10 @@ iframe {
     padding: 20px;
   }
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 .landing {
   height: calc(90vh - 64px);
 }
@@ -853,6 +940,7 @@ iframe {
   position: relative;
   background-color: #000000a4;
   object-fit: cover;
+  object-position: top;
   z-index: -1;
 }
 .ct {
@@ -896,6 +984,7 @@ iframe {
   letter-spacing: 1.3px;
   line-height: 1.5;
 }
+
 @media (min-width: 600px) {
   .landing-title {
     font-size: 30px;
@@ -978,4 +1067,10 @@ iframe {
   bottom: 0;
   right: 0;
   border-width: 0 1px 1px 0;
+}
+@media screen and (max-width: 960px) {
+  .bgg3 {
+    background-position: center !important ;
+    background-size: cover !important;
+  }
 }

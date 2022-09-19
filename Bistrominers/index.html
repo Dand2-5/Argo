@@ -29,9 +29,20 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  
+    
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <div class="loader">
+      <div class="spinner-border text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <header class="navbar">
       <nav>
         <div class="navbar-brand">
@@ -59,82 +70,53 @@
       </nav>
     </header>
     <section class="landing">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="ci-screen"></div>
-            <img
-              class="d-block w-100 c-img"
-              src="./assets/background/1.jpg"
-              alt="First slide"
-            />
-            <div class="container">
-              <div class="ct container">
-                <h1 class="landing-title">
-                  We Provide Proper Investment Solutions
-                </h1>
-                <p class="text-sub mb-4">
-                  Our superb financial technologies make all the difference in
-                  connecting you to financial organizations, capital
-                  specialists, and investors.
-                </p>
-                <a href="#" class="cta-btn"
-                  >Get started
-                  <span class="cta-icon"
-                    ><img src="./img/right.svg" alt="" /></span
-                ></a>
-              </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" style="background-image:linear-gradient(to right, #00000034, #00000034), url(./assets/background/bg-1.jpg); background-position:center;">
+            <div class="ss-cnt container">
+              <h1 class="landing-title">Latest NTA & investment update</h1>
+              <p class="landing-sub">See our latest NTA and investment update for latest month-end NTA figures, market commentary and top 20 investments</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="ci-screen"></div>
-            <img
-              class="d-block w-100"
-              src="./assets/background/2.jpg"
-              alt="Second slide"
-            />
-            <div class="container">
-              <div class="ct">
-                <h1 class="landing-title">
-                  Our clients don't have retirement problems
-                </h1>
-                <p class="text-sub mb-4">
-                  Our superb financial technologies make all the difference in
-                  connecting you to financial organizations, capital
-                  specialists, and investors.
-                </p>
-                <a href="#" class="cta-btn"
-                  >Sign up
-                  <span class="cta-icon"
-                    ><img src="./img/right.svg" alt="" /></span
-                ></a>
+          <div class="swiper-slide" style="background-image:linear-gradient(to right, #00000034, #00000034), url(./assets/background/bg-2.png);">
+            <div class="d-flex outter75">
+              <div class="d-flex inner75">
+                <img src="./image/since75.png" alt="" class="since75">
               </div>
+            <div class="ss-cnt container invest75">
+              <h1 class="landing-title">investing for our shearholders for over 75 years</h1>
+              <p class="landing-sub">For more than 75 years, we have invested on behalf of our shearholders</p>
+            </div>
+            </div>
+            
+          </div>
+          <div class="swiper-slide" style="background-image:linear-gradient(to right, #00000034, #00000034), url(./assets/background/bg-4.jpg);">
+            <div class="ss-cnt container">
+              <h1 class="landing-title">Argo reports record profit and increases fully francked dividend </h1>
+              <p class="landing-sub">Argo investment is pleased to announce a record full year profit of $312.9m. The Board decleared a fully franked final dividend of 17 cents per share,an increase of 21.4%</p>
+            </div>
+          </div>
+          <div class="swiper-slide bgg3" style="background-image:linear-gradient(to right, #00000034, #00000034), url(./assets/background/bg-3.jpg);">
+            <div class="ss-cnt container">
+              <h1 class="landing-title">CommSec Executive Series</h1>
+              <p class="landing-sub">Managing Director,jason Beddow, speaks with CommSec's Tom Piotrowski about our FY22 result, how the Australian share market is placed giving the rising interest rate environment and his views on the financial,energy and retail sectors</p>
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
+
+      
     </section>
     <section class="landing-bottom">
       <div class="row container-fluid">
@@ -687,8 +669,10 @@
       </div>
     </section>
     <section class="mq mq-quote text-center">
-      <h2 class="mb-4">I will tell you how to become rich. Close the doors. Be fearful when others are greedy. Be greedy when others are fearful.</h2>
-      <p class="quote">Warren Buffet.</p>
+      <div class="container">
+        <h2 class="mb-4">I will tell you how to become rich. Close the doors. Be fearful when others are greedy. Be greedy when others are fearful.</h2>
+        <p class="quote">Warren Buffet.</p>
+      </div>
     </section>
     <section class="team">
       <div class="container">
@@ -745,8 +729,8 @@
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4 footer--widget widget-about">
               <div class="widget-content">
-                Argo Investment is among the most diversified financial service
                 <p>
+                  Argo Investment is among the most diversified financial service
                   companies in the world. Our fundamental mission is to help
                   customers and clients achieve their financial objectives.
                 </p>
@@ -803,6 +787,9 @@
         <p>Copyright 2022. All Rights Reserved. <br>Powered by The Champion©</p>
       </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
