@@ -1,0 +1,17 @@
+ <section class="outtersec">
+      <section class="landing">
+        <div class="landing-content pt-5">
+          <p class="landing-sub">INSTANT, SECURE & PRIVATE.</p>
+          <h1 class="landing-title">We help you acheive your financial goals.</h1>
+          <p class="landing-sub lst mb-5">Our objective is to maximise long-term returns to our shareholders through reliable fully franked dividend income and capital growth.</p>
+          <a href="#" class="lcta-btn">Get started</a>
+        </div>
+      </section>
+      <div class="landing-content2">
+        <div class="innerlanding ms-4 ">
+          <h1 class="text-light mag">Our Clients Don't Have Retirment problems</h1>
+          <p class="text-light mag magin mt-4 mb-5"> Our superb finacial tecnologies make all the difference in connecting you to finacial organization, capital specialist, and investors</p>
+          <a href="#" class="lcta-btn ">Get started</a>
+        </div>
+      </div>
+    </section>
